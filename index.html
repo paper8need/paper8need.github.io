@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>尸兄漫画-尸兄漫画全集阅读指南与剧情解析</title>
+    <meta name="description" content="尸兄漫画完整阅读指南：介绍漫画主线、主要角色、丧尸设定、剧情篇章、阅读顺序及常见问题。帮助新读者快速了解这部末世搞笑恐怖国漫。">
+    <meta name="keywords" content="尸兄漫画,尸兄,漫画阅读,末世漫画,国漫推荐,剧情解析,角色介绍,漫画指南">
+    <link rel="stylesheet" href="data:text/css,"> <!-- 占位确保样式内部优先 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: #f4f1ea;
+            color: #1e1e1e;
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fcfaf5;
+            box-shadow: 0 0 20px rgba(0,0,0,0.03);
+        }
+        /* 头部 */
+        .site-header {
+            background: #1a1f1a;
+            color: #e8e0d0;
+            padding: 1.2rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 4px solid #6e2c1f;
+        }
+        .logo-area {
+            display: flex;
+            align-items: baseline;
+            gap: 10px;
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #d8b26a;
+            text-shadow: 2px 2px 0 #3a1f0f;
+        }
+        .logo-sub {
+            font-size: 0.9rem;
+            color: #b7aa91;
+            border-left: 1px solid #5f5a4a;
+            padding-left: 10px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: #d9d0bd;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #e6b84c;
+        }
+        /* 主视觉 */
+        .hero {
+            background: linear-gradient(145deg, #29332b 0%, #1d2620 100%);
+            color: #f1e9da;
+            padding: 3.5rem 2.5rem 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #4c4a3a;
+        }
+        .hero-text {
+            flex: 1 1 300px;
+        }
+        .hero-text h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            font-weight: 800;
+            color: #efd491;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 5px #00000055;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            max-width: 600px;
+            color: #d6cdb8;
+            margin-top: 0.5rem;
+        }
+        .hero-badge {
+            background: #6e2c1f;
+            color: #f5e6c4;
+            padding: 0.4rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-top: 1.4rem;
+            border: 1px solid #b56a4a;
+        }
+        .hero-cover-emblem {
+            font-size: 4rem;
+            opacity: 0.25;
+            font-weight: 800;
+            padding: 1rem;
+            user-select: none;
+        }
+        /* 内容区块通用 */
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            border-left: 8px solid #6e2c1f;
+            padding-left: 1.2rem;
+            margin: 2.5rem 0 1.5rem 0;
+            color: #2c2c24;
+            letter-spacing: 1px;
+        }
+        .section-sub {
+            font-size: 1.1rem;
+            color: #5c5c4e;
+            margin-bottom: 1.5rem;
+        }
+        .content-card {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 1.8rem 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+            margin-bottom: 2rem;
+            border: 1px solid #e3ddcf;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin: 1.8rem 0;
+        }
+        .feature-card {
+            background: #faf7f0;
+            border-radius: 14px;
+            padding: 1.5rem 1.2rem;
+            border: 1px solid #ddd6c5;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 18px rgba(0,0,0,0.08);
+        }
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.7rem;
+            color: #6e2c1f;
+        }
+        .feature-card p {
+            color: #3f3a30;
+            font-size: 0.95rem;
+        }
+        /* 角色列表 */
+        .char-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            justify-content: center;
+            margin: 1.8rem 0;
+        }
+        .char-item {
+            background: #f1eadb;
+            border-radius: 40px 16px 16px 40px;
+            padding: 0.8rem 1.5rem 0.8rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 1px solid #cbbfa4;
+            font-weight: 600;
+        }
+        .char-item span:first-child {
+            background: #6e2c1f;
+            color: #f2e5cc;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+        /* 步骤区 */
+        .steps {
+            counter-reset: step-counter;
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        .steps li {
+            counter-increment: step-counter;
+            padding: 0.8rem 0.8rem 0.8rem 3rem;
+            position: relative;
+            background: #f9f5ec;
+            margin-bottom: 0.8rem;
+            border-radius: 40px;
+            border-left: 4px solid #8a3b2a;
+        }
+        .steps li::before {
+            content: counter(step-counter);
+            background: #6e2c1f;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px dashed #d9cfb8;
+            padding: 1.2rem 0;
+        }
+        .faq-item h3 {
+            font-size: 1.2rem;
+            color: #3b2e1c;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        .faq-item p {
+            color: #4e483a;
+        }
+        /* 页脚 */
+        .site-footer {
+            background: #1a1f1a;
+            color: #aa9f8b;
+            padding: 2rem;
+            text-align: center;
+            border-top: 3px solid #6e2c1f;
+            margin-top: 2.5rem;
+            font-size: 0.9rem;
+        }
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 1rem;
+            color: #c7b79b;
+        }
+        /* 响应式调整 */
+        @media (max-width: 768px) {
+            .site-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+                padding: 1rem;
+            }
+            .nav-links {
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            .hero {
+                padding: 2rem 1.2rem;
+            }
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+            .hero-cover-emblem {
+                display: none;
+            }
+            .section-title {
+                font-size: 1.5rem;
+                margin-top: 1.8rem;
+            }
+            .content-card {
+                padding: 1.2rem;
+            }
+            .char-item {
+                border-radius: 30px;
+                padding: 0.5rem 1rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            .char-list {
+                flex-direction: column;
+                align-items: stretch;
+            }
+        }
+        /* 其他细节 */
+        .notice {
+            background: #f3e7d3;
+            border-left: 6px solid #a0522d;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            font-style: normal;
+            margin: 2rem 0;
+        }
+        .btn-like {
+            display: inline-block;
+            background: #6e2c1f;
+            color: #f4eedd;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: 1px solid #a35a3e;
+            transition: background 0.2s;
+        }
+        .btn-like:hover {
+            background: #8f3e2c;
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <!-- 页眉 -->
+    <header class="site-header">
+        <div class="logo-area">
+            <div class="logo">尸兄</div>
+            <div class="logo-sub">漫画 · 末世求生手册</div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#intro">漫画简介</a></li>
+                <li><a href="#world">世界观</a></li>
+                <li><a href="#roles">主要角色</a></li>
+                <li><a href="#guide">阅读顺序</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 首屏 -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>尸兄漫画</h1>
+            <p class="hero-desc">末世搞笑×恐怖生存，国漫经典《尸兄》深度阅读指南。从剧情主线到角色全解析，助你快速入坑这部丧尸题材人气作品。</p>
+            <span class="hero-badge">🔥 已陪伴读者十余年</span>
+        </div>
+        <div class="hero-cover-emblem">🧟</div>
+    </section>
+
+    <main>
+        <!-- 核心内容区 -->
+        <section id="intro">
+            <h2 class="section-title">《尸兄》漫画是什么？</h2>
+            <div class="content-card">
+                <p><strong>《尸兄》</strong>是一部以丧尸爆发为背景的国产漫画，融合黑色幽默、生存冒险和都市怪谈。故事从主角<span style="color:#6e2c1f; font-weight:600;">白小飞</span>的日常展开，因自来水污染引发的“尸兄”危机迅速席卷城市，他必须一边寻找青梅竹马，一边在混乱中求生。漫画以夸张笑点与惊悚情节交替为特色，画风充满张力，人物塑造鲜活。</p>
+                <p>作为国漫中较早尝试长篇末世题材的作品，它凭借独特的“重口味”与轻松叙事收获大量粉丝。目前漫画已连载完结（或阶段性完结），并推出动画与改编作品。若要体验原汁原味的剧情，阅读漫画是首选。</p>
+                <div class="notice">
+                    📖 新读者提示：前期画风与后期略有差异，但剧情连贯性极强，建议从第一话按顺序阅读。
+                </div>
+            </div>
+        </section>
+
+        <!-- 世界观设定 -->
+        <section id="world">
+            <h2 class="section-title">末世设定与尸兄类型</h2>
+            <div class="content-card">
+                <p>在《尸兄》的世界中，病毒通过水源迅速扩散，感染者变成变异怪物——“尸兄”。它们保留部分人类特征但力量增强，形态各异，甚至出现高智商个体。故事中人类势力、幸存者团体以及特殊感染者之间冲突不断。</p>
+                <div class="grid-3">
+                    <div class="feature-card">
+                        <h3>💧 感染源</h3>
+                        <p>城市供水系统被污染，早期感染者多为饮用自来水的人群。后续变异体可通过咬伤、体液传播，令危机指数级扩大。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🧠 尸兄等级</h3>
+                        <p>普通尸兄、速行种、巨型种、智慧首领……随着剧情推进，出现超越常理的进化个体，威胁不断升级。</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>🏙️ 场景舞台</h3>
+                        <p>从现代都市到军事基地、地下实验室，故事跨越多种场景，展现末世下的人性百态。</p>
+                    </div>
+                </div>
+                <p style="margin-top:1rem;">不同于纯粹吓人的丧尸片，《尸兄》常常在血腥中用无厘头对白和夸张表情冲淡压抑感，形成独特的“反差萌”。</p>
+            </div>
+        </section>
+
+        <!-- 主要角色 -->
+        <section id="roles">
+            <h2 class="section-title">重要角色一览</h2>
+            <div class="content-card">
+                <p>角色魅力是《尸兄》的核心亮点，以下列出戏份多、粉丝讨论度高的几位：</p>
+                <div class="char-list">
+                    <div class="char-item"><span>白</span>白小飞 · 主角，普通青年→末世战士</div>
+                    <div class="char-item"><span>小</span>小惠 · 白小飞青梅竹马，线索人物</div>
+                    <div class="char-item"><span>尸</span>尸王 · 智慧型boss，压迫感极强</div>
+                    <div class="char-item"><span>穆</span>穆老师 · 神秘高手，战力担当</div>
+                    <div class="char-item"><span>蓝</span>蓝若曦 · 军方背景关键角色</div>
+                    <div class="char-item"><span>鹿</span>鹿鹿 · 吉祥物般的尸兄？</div>
+                </div>
+                <p style="margin-top: 1rem;">每个角色都有背景故事与成长轨迹，正因如此，粉丝对结局的讨论才持久不衰。</p>
+            </div>
+        </section>
+
+        <!-- 阅读顺序/篇章指南 -->
+        <section id="guide">
+            <h2 class="section-title">漫画章节与阅读建议</h2>
+            <div class="content-card">
+                <p>《尸兄》漫画分为多个篇章，主线清晰。对于新读者，建议按以下顺序阅读：</p>
+                <ol class="steps">
+                    <li><strong>开端·城市沦陷</strong>（第1话~第20话）：白小飞初遇危机，确立求生目标。</li>
+                    <li><strong>尸兄进化·强敌出现</strong>（约21话~60话）：战斗升级，引入主要反派与伙伴。</li>
+                    <li><strong>异能势力·真相浮出</strong>（中期）：世界观扩大，感染根源逐渐揭晓。</li>
+                    <li><strong>决战与终章</strong>（后期）：势力洗牌，主角命运迎来收束。</li>
+                </ol>
+                <p>如果你已经看完动画，可以从漫画中期衔接，但很多细节与支线剧情只有漫画才看得到。使用“哔哩哔哩漫画”“腾讯动漫”等正版平台可阅读完整内容。</p>
+                <p style="margin-top: 1rem;"><a href="#" class="btn-like" style="pointer-events: none; opacity: 0.8;">📘 正版阅读渠道参考</a> <span style="font-size:0.85rem; color: #6b5a44;">(支持正版，体验更佳)</span></p>
+            </div>
+        </section>
+
+        <!-- 优势/特色 -->
+        <section id="features">
+            <h2 class="section-title">为什么值得看《尸兄》？</h2>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <h3>🎭 笑泪并存</h3>
+                    <p>恶搞名场面数不胜数，但关键时刻的牺牲与抉择又令人动容，情绪张力足。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 进化式画风</h3>
+                    <p>早期画风稍显青涩，中后期精细度、分镜和氛围渲染明显进步，见证成长。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🧩 群像刻画</h3>
+                    <p>正反派角色都有记忆点，不是单纯的正邪对立，每个人都有自己的坚持。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section id="faq">
+            <h2 class="section-title">读者常见疑问</h2>
+            <div class="content-card">
+                <div class="faq-item">
+                    <h3>Q：《尸兄》漫画完结了吗？</h3>
+                    <p>A：正文已完结，另有外传和特别篇。整体故事有始有终，可放心观看。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q：动画和漫画剧情一样吗？</h3>
+                    <p>A：动画前期改编较大，后期走向与漫画有区别。想看完整原版剧情，漫画是基准。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q：适合什么年龄段的读者？</h3>
+                    <p>A：包含暴力血腥场面及部分成人幽默，建议16岁及以上读者观看。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Q：有没有类似漫画推荐？</h3>
+                    <p>A：喜欢末世搞笑可以关注《末日曙光》《我是大神仙》等，但风格各异。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="footer-links">
+            <span>尸兄漫画讨论</span>
+            <span>·</span>
+            <span>漫画百科</span>
+            <span>·</span>
+            <span>粉丝社区</span>
+        </div>
+        <p>© 尸兄漫画阅读指南 · 本页面为爱好者整理，不存储漫画文件，请支持正版。</p>
+        <p style="font-size:0.8rem; margin-top:0.5rem;">末世中，记得保持幽默感。</p>
+    </footer>
+</div>
+</body>
+</html>
